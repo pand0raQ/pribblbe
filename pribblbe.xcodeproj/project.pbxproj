@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B6A89F6CE54DB00EF5AD539 /* Pods_pribblbe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D885655508616C07EB51FC33 /* Pods_pribblbe.framework */; };
+		8F3EAC3D1DE85F6200AD1DCF /* OAuth2RetryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3EAC3C1DE85F6200AD1DCF /* OAuth2RetryHandler.swift */; };
 		8F586D281DE852D000B1AE72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F586D271DE852D000B1AE72 /* AppDelegate.swift */; };
-		8F586D2A1DE852D000B1AE72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F586D291DE852D000B1AE72 /* ViewController.swift */; };
+		8F586D2A1DE852D000B1AE72 /* OauthByDribbble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F586D291DE852D000B1AE72 /* OauthByDribbble.swift */; };
 		8F586D2D1DE852D000B1AE72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F586D2B1DE852D000B1AE72 /* Main.storyboard */; };
 		8F586D301DE852D000B1AE72 /* pribblbe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8F586D2E1DE852D000B1AE72 /* pribblbe.xcdatamodeld */; };
 		8F586D321DE852D000B1AE72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F586D311DE852D000B1AE72 /* Assets.xcassets */; };
@@ -16,14 +18,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0270F621FB4A565149F49C24 /* Pods-pribblbe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pribblbe.release.xcconfig"; path = "Pods/Target Support Files/Pods-pribblbe/Pods-pribblbe.release.xcconfig"; sourceTree = "<group>"; };
+		8F3EAC3C1DE85F6200AD1DCF /* OAuth2RetryHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2RetryHandler.swift; sourceTree = "<group>"; };
 		8F586D241DE852D000B1AE72 /* pribblbe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pribblbe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F586D271DE852D000B1AE72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8F586D291DE852D000B1AE72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8F586D291DE852D000B1AE72 /* OauthByDribbble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OauthByDribbble.swift; sourceTree = "<group>"; };
 		8F586D2C1DE852D000B1AE72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F586D2F1DE852D000B1AE72 /* pribblbe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = pribblbe.xcdatamodel; sourceTree = "<group>"; };
 		8F586D311DE852D000B1AE72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F586D341DE852D000B1AE72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F586D361DE852D000B1AE72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCEE21A001A4F3E971881FC0 /* Pods-pribblbe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pribblbe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pribblbe/Pods-pribblbe.debug.xcconfig"; sourceTree = "<group>"; };
+		D885655508616C07EB51FC33 /* Pods_pribblbe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pribblbe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B6A89F6CE54DB00EF5AD539 /* Pods_pribblbe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B6C76831DBF56AE20A6D85F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCEE21A001A4F3E971881FC0 /* Pods-pribblbe.debug.xcconfig */,
+				0270F621FB4A565149F49C24 /* Pods-pribblbe.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		77F6282885B5CCBCF30452D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D885655508616C07EB51FC33 /* Pods_pribblbe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8F586D1B1DE852CF00B1AE72 = {
 			isa = PBXGroup;
 			children = (
 				8F586D261DE852D000B1AE72 /* pribblbe */,
 				8F586D251DE852D000B1AE72 /* Products */,
+				1B6C76831DBF56AE20A6D85F /* Pods */,
+				77F6282885B5CCBCF30452D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				8F586D271DE852D000B1AE72 /* AppDelegate.swift */,
-				8F586D291DE852D000B1AE72 /* ViewController.swift */,
+				8F586D291DE852D000B1AE72 /* OauthByDribbble.swift */,
+				8F3EAC3C1DE85F6200AD1DCF /* OAuth2RetryHandler.swift */,
 				8F586D2B1DE852D000B1AE72 /* Main.storyboard */,
 				8F586D311DE852D000B1AE72 /* Assets.xcassets */,
 				8F586D331DE852D000B1AE72 /* LaunchScreen.storyboard */,
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F586D391DE852D000B1AE72 /* Build configuration list for PBXNativeTarget "pribblbe" */;
 			buildPhases = (
+				9D8814BD56DA848F4E49BB17 /* 📦 Check Pods Manifest.lock */,
 				8F586D201DE852CF00B1AE72 /* Sources */,
 				8F586D211DE852CF00B1AE72 /* Frameworks */,
 				8F586D221DE852CF00B1AE72 /* Resources */,
+				7FF0182C50A0DD23E556BC86 /* 📦 Embed Pods Frameworks */,
+				B06691F038A9C21C4AC7CA77 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -99,6 +129,7 @@
 				TargetAttributes = {
 					8F586D231DE852CF00B1AE72 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -134,14 +165,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7FF0182C50A0DD23E556BC86 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pribblbe/Pods-pribblbe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D8814BD56DA848F4E49BB17 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B06691F038A9C21C4AC7CA77 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pribblbe/Pods-pribblbe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8F586D201DE852CF00B1AE72 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8F586D301DE852D000B1AE72 /* pribblbe.xcdatamodeld in Sources */,
-				8F586D2A1DE852D000B1AE72 /* ViewController.swift in Sources */,
+				8F586D2A1DE852D000B1AE72 /* OauthByDribbble.swift in Sources */,
 				8F586D281DE852D000B1AE72 /* AppDelegate.swift in Sources */,
+				8F3EAC3D1DE85F6200AD1DCF /* OAuth2RetryHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +340,7 @@
 		};
 		8F586D3A1DE852D000B1AE72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCEE21A001A4F3E971881FC0 /* Pods-pribblbe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = pribblbe/Info.plist;
@@ -272,6 +353,7 @@
 		};
 		8F586D3B1DE852D000B1AE72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0270F621FB4A565149F49C24 /* Pods-pribblbe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = pribblbe/Info.plist;
@@ -301,6 +383,7 @@
 				8F586D3B1DE852D000B1AE72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

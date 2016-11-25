@@ -1,0 +1,6 @@
+framework module Pods_pribblbe {
+  umbrella header "Pods-pribblbe-umbrella.h"
+
+  export *
+  module * { export * }
+}

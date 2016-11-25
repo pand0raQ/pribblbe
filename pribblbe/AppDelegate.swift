@@ -8,11 +8,25 @@
 
 import UIKit
 import CoreData
+import p2_OAuth2
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+if "pribblbee" == url.scheme {
+            if let vc = window?.rootViewController as? ViewController {
+                vc.oauth2.handleRedirectURL(url)
+                return true
+            }
+        }
+        return false
+    }
+
+
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
