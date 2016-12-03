@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2B6A89F6CE54DB00EF5AD539 /* Pods_pribblbe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D885655508616C07EB51FC33 /* Pods_pribblbe.framework */; };
+		8F30F3081DECA07700E1F616 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F30F3071DECA07700E1F616 /* TableViewController.swift */; };
+		8F30F30A1DECBBC800E1F616 /* Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F30F3091DECBBC800E1F616 /* Parse.swift */; };
 		8F3EAC3D1DE85F6200AD1DCF /* OAuth2RetryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3EAC3C1DE85F6200AD1DCF /* OAuth2RetryHandler.swift */; };
 		8F586D281DE852D000B1AE72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F586D271DE852D000B1AE72 /* AppDelegate.swift */; };
 		8F586D2A1DE852D000B1AE72 /* OauthByDribbble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F586D291DE852D000B1AE72 /* OauthByDribbble.swift */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		0270F621FB4A565149F49C24 /* Pods-pribblbe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pribblbe.release.xcconfig"; path = "Pods/Target Support Files/Pods-pribblbe/Pods-pribblbe.release.xcconfig"; sourceTree = "<group>"; };
+		8F30F3071DECA07700E1F616 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		8F30F3091DECBBC800E1F616 /* Parse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parse.swift; sourceTree = "<group>"; };
 		8F3EAC3C1DE85F6200AD1DCF /* OAuth2RetryHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2RetryHandler.swift; sourceTree = "<group>"; };
 		8F586D241DE852D000B1AE72 /* pribblbe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pribblbe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F586D271DE852D000B1AE72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +32,7 @@
 		8F586D311DE852D000B1AE72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F586D341DE852D000B1AE72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F586D361DE852D000B1AE72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FA2B5321DF076870017424F /* pribblbe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pribblbe-Bridging-Header.h"; sourceTree = "<group>"; };
 		BCEE21A001A4F3E971881FC0 /* Pods-pribblbe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pribblbe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pribblbe/Pods-pribblbe.debug.xcconfig"; sourceTree = "<group>"; };
 		D885655508616C07EB51FC33 /* Pods_pribblbe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pribblbe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -83,6 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				8F586D271DE852D000B1AE72 /* AppDelegate.swift */,
+				8F30F3071DECA07700E1F616 /* TableViewController.swift */,
+				8F30F3091DECBBC800E1F616 /* Parse.swift */,
 				8F586D291DE852D000B1AE72 /* OauthByDribbble.swift */,
 				8F3EAC3C1DE85F6200AD1DCF /* OAuth2RetryHandler.swift */,
 				8F586D2B1DE852D000B1AE72 /* Main.storyboard */,
@@ -90,6 +97,7 @@
 				8F586D331DE852D000B1AE72 /* LaunchScreen.storyboard */,
 				8F586D361DE852D000B1AE72 /* Info.plist */,
 				8F586D2E1DE852D000B1AE72 /* pribblbe.xcdatamodeld */,
+				8FA2B5321DF076870017424F /* pribblbe-Bridging-Header.h */,
 			);
 			path = pribblbe;
 			sourceTree = "<group>";
@@ -129,6 +137,7 @@
 				TargetAttributes = {
 					8F586D231DE852CF00B1AE72 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = C77N4S9VR3;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
@@ -219,9 +228,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F586D301DE852D000B1AE72 /* pribblbe.xcdatamodeld in Sources */,
+				8F30F3081DECA07700E1F616 /* TableViewController.swift in Sources */,
 				8F586D2A1DE852D000B1AE72 /* OauthByDribbble.swift in Sources */,
 				8F586D281DE852D000B1AE72 /* AppDelegate.swift in Sources */,
 				8F3EAC3D1DE85F6200AD1DCF /* OAuth2RetryHandler.swift in Sources */,
+				8F30F30A1DECBBC800E1F616 /* Parse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,11 +354,17 @@
 			baseConfigurationReference = BCEE21A001A4F3E971881FC0 /* Pods-pribblbe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = C77N4S9VR3;
 				INFOPLIST_FILE = pribblbe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = haliks.pribblbe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "pribblbe/pribblbe-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -356,11 +373,16 @@
 			baseConfigurationReference = 0270F621FB4A565149F49C24 /* Pods-pribblbe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = C77N4S9VR3;
 				INFOPLIST_FILE = pribblbe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = haliks.pribblbe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "pribblbe/pribblbe-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

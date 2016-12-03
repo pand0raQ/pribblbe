@@ -1,15 +1,20 @@
 PODS:
   - Alamofire (4.2.0)
   - p2.OAuth2 (3.0.0)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
 
 DEPENDENCIES:
   - Alamofire (= 4.2.0)
   - p2.OAuth2 (~> 3.0)
+  - SDWebImage (~> 3.8)
 
 SPEC CHECKSUMS:
   Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
   p2.OAuth2: a8f96ecad6a46189b9b193691fea401139e43491
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
 
-PODFILE CHECKSUM: dbbe1959f0504e61016c4c8c2d5089ebadcc1eee
+PODFILE CHECKSUM: 6a84a626b3caee391d519867d4e8c510d67568f1
 
 COCOAPODS: 1.0.0

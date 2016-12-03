@@ -7,10 +7,11 @@
 //
 
 import UIKit
-import Alamofire
 import p2_OAuth2
+import Alamofire
 
 class ViewController: UIViewController {
+    
     fileprivate var alamofireManager: SessionManager?
     
     var loader: OAuth2DataLoader?
@@ -26,7 +27,7 @@ let request = URLRequest(url: URL(string: "https://api.dribbble.com/v1/user?acce
             }
         }
     }
-    func didGetUserdata(dict: [String: Any], loader: OAuth2DataLoader?) {
+    func didGetUserdata(_ dict: [String: Any], loader: OAuth2DataLoader?) {
         DispatchQueue.main.async {
         }
     }
@@ -60,7 +61,7 @@ let request = URLRequest(url: URL(string: "https://api.dribbble.com/v1/user?acce
         loader.perform(request: userDataRequest) { response in
             do {
                 let json = try response.responseJSON()
-                self.didGetUserdata(dict: json, loader: loader)
+                self.didGetUserdata(json, loader: loader)
             }
             catch let error {
                 self.didCancelOrFail(error)
@@ -71,6 +72,9 @@ let request = URLRequest(url: URL(string: "https://api.dribbble.com/v1/user?acce
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+ 
     }
 
     override func didReceiveMemoryWarning() {
