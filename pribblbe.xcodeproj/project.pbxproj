@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B6A89F6CE54DB00EF5AD539 /* Pods_pribblbe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D885655508616C07EB51FC33 /* Pods_pribblbe.framework */; };
+		8F21629B1E1A6B6F00D0748E /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21629A1E1A6B6F00D0748E /* data.swift */; };
 		8F30F3081DECA07700E1F616 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F30F3071DECA07700E1F616 /* TableViewController.swift */; };
 		8F30F30A1DECBBC800E1F616 /* Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F30F3091DECBBC800E1F616 /* Parse.swift */; };
 		8F3EAC3D1DE85F6200AD1DCF /* OAuth2RetryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3EAC3C1DE85F6200AD1DCF /* OAuth2RetryHandler.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		0270F621FB4A565149F49C24 /* Pods-pribblbe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pribblbe.release.xcconfig"; path = "Pods/Target Support Files/Pods-pribblbe/Pods-pribblbe.release.xcconfig"; sourceTree = "<group>"; };
+		8F21629A1E1A6B6F00D0748E /* data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
 		8F30F3071DECA07700E1F616 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		8F30F3091DECBBC800E1F616 /* Parse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parse.swift; sourceTree = "<group>"; };
 		8F3EAC3C1DE85F6200AD1DCF /* OAuth2RetryHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2RetryHandler.swift; sourceTree = "<group>"; };
@@ -66,6 +68,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8F2162951E1A686900D0748E /* model */ = {
+			isa = PBXGroup;
+			children = (
+				8F21629A1E1A6B6F00D0748E /* data.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		8F2162961E1A687500D0748E /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		8F2162971E1A687E00D0748E /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		8F2162981E1A688700D0748E /* oauth */ = {
+			isa = PBXGroup;
+			children = (
+				8F586D291DE852D000B1AE72 /* OauthByDribbble.swift */,
+				8F3EAC3C1DE85F6200AD1DCF /* OAuth2RetryHandler.swift */,
+			);
+			name = oauth;
+			sourceTree = "<group>";
+		};
 		8F586D1B1DE852CF00B1AE72 = {
 			isa = PBXGroup;
 			children = (
@@ -87,11 +120,13 @@
 		8F586D261DE852D000B1AE72 /* pribblbe */ = {
 			isa = PBXGroup;
 			children = (
+				8F2162981E1A688700D0748E /* oauth */,
+				8F2162971E1A687E00D0748E /* controller */,
+				8F2162961E1A687500D0748E /* view */,
+				8F2162951E1A686900D0748E /* model */,
 				8F586D271DE852D000B1AE72 /* AppDelegate.swift */,
 				8F30F3071DECA07700E1F616 /* TableViewController.swift */,
 				8F30F3091DECBBC800E1F616 /* Parse.swift */,
-				8F586D291DE852D000B1AE72 /* OauthByDribbble.swift */,
-				8F3EAC3C1DE85F6200AD1DCF /* OAuth2RetryHandler.swift */,
 				8F586D2B1DE852D000B1AE72 /* Main.storyboard */,
 				8F586D311DE852D000B1AE72 /* Assets.xcassets */,
 				8F586D331DE852D000B1AE72 /* LaunchScreen.storyboard */,
@@ -232,6 +267,7 @@
 				8F586D2A1DE852D000B1AE72 /* OauthByDribbble.swift in Sources */,
 				8F586D281DE852D000B1AE72 /* AppDelegate.swift in Sources */,
 				8F3EAC3D1DE85F6200AD1DCF /* OAuth2RetryHandler.swift in Sources */,
+				8F21629B1E1A6B6F00D0748E /* data.swift in Sources */,
 				8F30F30A1DECBBC800E1F616 /* Parse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
